@@ -15,18 +15,27 @@
 
 
 ## Tipos de Datos Avanzados
-## Alias de Tipos (`type`)
+- **Alias de Tipos (`type`)**
 - Es como crear un "molde" o una etiqueta personalizada para reutilizarla. Evita repetir código.
     Ej: `type miID = number | string;`
 
-## Uniones (`|`)
+- **Uniones (`|`)**
 - Permite que una variable acepte más de un tipo de dato (funciona como un "O").
     Ej: `let respuesta: string | boolean = "Éxito";`
 
-## Intersecciones (`&`)
+- **Intersecciones (`&`)**
 - Sirve para combinar dos o más tipos (moldes) en uno solo (funciona como un "Y").
     Ej: `type productoFinal = productoBasico & detallesExtra;`
 
-## Tipos Literales
+- **Tipos Literales**
 - La variable no solo tiene un tipo, sino que solo puede valer una de las opciones exactas que definamos.
     Ej: `type estadosDeMision = "en-curso" | "terminada";`
+
+
+## Funciones en TypeScript
+- **Parámetros Tipados**: Obligamos a que cada entrada de la función tenga un tipo.
+    Ej: `function saludar(nombre: string) { ... }`
+- **Tipo de Retorno**: Especificamos qué dato devuelve la función después de los paréntesis.
+    Ej: `function sumar(n: number): number { return n + n; }`
+- **Tipo Void**: Se usa cuando una función NO devuelve nada (solo ejecuta una acción, como un log o un cambio en el HTML).
+    Ej: `function mostrarAlerta(): void { alert("Hola"); }`

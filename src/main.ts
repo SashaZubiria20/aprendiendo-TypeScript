@@ -1,2 +1,3 @@
-import './tiposDeDatos';
-import './tiposDeDatosAvanzados';
+//import './tiposDeDatos';
+//import './tiposDeDatosAvanzados';
+import './funciones';
