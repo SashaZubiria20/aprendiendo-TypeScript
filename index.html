@@ -13,10 +13,35 @@
 
     <!-- Sección para el Ejercicio de Funciones -->
     <section id="seccionProductos" class="tarjetaEjercicio">
-        <h2 class="tituloSeccion">Gestión de Inventario: Tienda Tech</h2>
+        <h2 class="tituloSeccion">Funciones: Gestión de Inventario - Tienda Tech</h2>
         <div id="pantallaProductos" class="pantallaVisual">
         </div>
     </section>
+
+    <!-- Sección para el DOM -->
+    <section id="seccionDom" class="tarjetaEjercicio">
+    <h2 class="tituloSeccion dom" id="titleDOM">Elementos del DOM</h2>
+    
+    <div class="contenedorInput">
+        <label for="nombreUsuario" class="etiqueta">Username:</label>
+        <input type="text" id="nombreUsuario" class="entradaTexto" placeholder="Nombre de usuario">
+    </div>
+
+    <div class="contenedorInput">
+      <h2 class="tituloSeccion">Ejercicio 2: Calculadora de Descuentos</h2>
+        <label for="precioProducto" class="etiqueta">Precio del Producto ($):</label>
+        <input type="number" id="precioProducto" class="entradaTexto" placeholder="Ej: 1500">
+        
+        <label for="porcentajeDescuento" class="etiqueta">Porcentaje de Descuento (%):</label>
+        <input type="number" id="porcentajeDescuento" class="entradaTexto" placeholder="Ej: 20">
+        
+        <button id="botonCalcular" class="botonAccion">Calcular Precio Final</button>
+    </div>
+
+    <div id="pantallaResultado" class="pantallaVisual">
+        Esperando cálculos...
+    </div>
+</section>
 
 </main>
     <div id="app"></div>

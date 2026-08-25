@@ -32,10 +32,26 @@
     Ej: `type estadosDeMision = "en-curso" | "terminada";`
 
 
-## Funciones en TypeScript
+## Funciones en TypeScript:
 - **Parámetros Tipados**: Obligamos a que cada entrada de la función tenga un tipo.
     Ej: `function saludar(nombre: string) { ... }`
 - **Tipo de Retorno**: Especificamos qué dato devuelve la función después de los paréntesis.
     Ej: `function sumar(n: number): number { return n + n; }`
 - **Tipo Void**: Se usa cuando una función NO devuelve nada (solo ejecuta una acción, como un log o un cambio en el HTML).
     Ej: `function mostrarAlerta(): void { alert("Hola"); }`
+
+
+## Manipulación del DOM en TypeScript:
+- **Selección de Elementos**: Podemos usar `getElementById` o `querySelector`. TS por defecto los marca como `Element | null`.
+
+- **Aserción de Tipo (Casteo)**: Se usa para decirle a TS exactamente qué tipo de etiqueta estamos capturando para poder acceder a sus propiedades específicas (como `.value`).
+    Ej: `const entrada = document.getElementById('id') as HTMLInputElement;`
+
+- **Tipos de Elementos Comunes**:
+    - `HTMLInputElement`: Para inputs de texto, números, etc.
+    - `HTMLButtonElement`: Para botones.
+    - `HTMLParagraphElement`: Para etiquetas `<p>`.
+    - `HTMLElement`: El tipo genérico si solo vas a usar cosas básicas como `.innerHTML`.
+    
+- **Operador de No Nulo (!)**: Se pone al final de la selección si estás 100% seguro de que el elemento existe y no querés usar un `if`.
+    Ej: `document.getElementById('id')!;`

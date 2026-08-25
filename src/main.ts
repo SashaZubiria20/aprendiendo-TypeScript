@@ -1,3 +1,4 @@
 //import './tiposDeDatos';
 //import './tiposDeDatosAvanzados';
-import './funciones';
+//import './funciones';
+import './dom'
