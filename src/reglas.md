@@ -55,3 +55,14 @@
     
 - **Operador de No Nulo (!)**: Se pone al final de la selección si estás 100% seguro de que el elemento existe y no querés usar un `if`.
     Ej: `document.getElementById('id')!;`
+
+    
+## Genéricos en TypeScript
+
+- **Concepto**: Son "plantillas" que permiten que una función, interfaz o clase sea flexible y trabaje con distintos tipos de datos sin perder la seguridad de TS.
+- **Sintaxis**: Se usa la letra `<T>` (por convención de "Type") o cualquier nombre descriptivo entre llaves angulares antes de los parámetros.
+    Ej: `function identidad<T>(dato: T): T { return dato; }`
+- **Uso en el DOM**: Permite especificar qué tipo de elemento estamos capturando con `querySelector` de forma nativa.
+    Ej: `const titulo = document.querySelector<HTMLHeadingElement>('.clase');`
+- **Ventaja**: A diferencia de `any`, los genéricos "recuerdan" el tipo de dato. Si le pasas un número, TS sabe que lo que sale es un número.
+
