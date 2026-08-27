@@ -2,4 +2,5 @@
 //import './tiposDeDatosAvanzados';
 //import './funciones';
 //import './dom'
-import './genericos';
+//import './genericos';
+import './clases';

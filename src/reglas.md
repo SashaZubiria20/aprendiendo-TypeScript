@@ -66,3 +66,16 @@
     Ej: `const titulo = document.querySelector<HTMLHeadingElement>('.clase');`
 - **Ventaja**: A diferencia de `any`, los genéricos "recuerdan" el tipo de dato. Si le pasas un número, TS sabe que lo que sale es un número.
 
+
+## Clases en TypeScript
+
+- **Concepto**: Son moldes o plantillas para crear objetos que agrupan datos (propiedades) y acciones (métodos).
+- **Modificadores de Acceso**:
+    - `public`: Accesible desde cualquier lugar (es el valor por defecto).
+    - `private`: Solo accesible dentro de la propia clase. Protege los datos.
+    - `readonly`: Permite leer el valor pero impide que sea modificado después de la creación.
+- **Constructor**: Es la función que se ejecuta automáticamente al crear un nuevo objeto (`new MiClase()`).
+- **Sintaxis Corta**: Podemos declarar y asignar propiedades directamente en los parámetros del constructor ahorrando código.
+    Ej: `constructor(public nombre: string) {}`
+
+
