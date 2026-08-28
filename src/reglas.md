@@ -89,3 +89,11 @@
 - **Sobreescritura**: Una clase hija puede tener un método con el mismo nombre que el padre para cambiar su comportamiento.
 - **Limitación**: En TypeScript/JavaScript, una clase solo puede heredar de **una** sola clase padre.
 
+
+## Interfaces en TypeScript
+
+- **Concepto**: Es un "contrato" que define la forma que debe tener un objeto. Obliga a que se cumplan las propiedades definidas.
+- **Diferencia con Type**: Las interfaces están diseñadas específicamente para objetos y pueden "extenderse" (agregándoles más propiedades después).
+- **Uso**: Es el estándar profesional para definir estructuras de datos que vienen de bases de datos o APIs.
+- **Interfaces Genéricas**: Al igual que las funciones, pueden recibir un `<T>` para que una de sus propiedades sea flexible.
+    Ej: `interface Caja<T> { contenido: T }`

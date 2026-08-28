@@ -4,4 +4,5 @@
 //import './dom'
 //import './genericos';
 //import './clases';
-import './herencia';
+//import './herencia';
+import './interfaces';
