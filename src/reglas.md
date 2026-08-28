@@ -79,3 +79,13 @@
     Ej: `constructor(public nombre: string) {}`
 
 
+## Herencia en TypeScript
+
+- **Concepto**: Permite que una clase (hija) herede todas las propiedades y métodos de otra clase (padre).
+- **Palabra clave `extends`**: Se usa para indicar que una clase deriva de otra.
+    Ej: `class Perro extends Animal { ... }`
+- **Palabra clave `super`**: Es una función que llama al constructor de la clase padre. Es obligatoria si la clase hija tiene su propio constructor.
+    Ej: `super(propiedadPadre);`
+- **Sobreescritura**: Una clase hija puede tener un método con el mismo nombre que el padre para cambiar su comportamiento.
+- **Limitación**: En TypeScript/JavaScript, una clase solo puede heredar de **una** sola clase padre.
+

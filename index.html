@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.css">
-    <title>aprendiendo-typescript</title>
-  </head>
-  <body>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./src/style.css">
+        <title>aprendiendo-typescript</title>
+    </head>
+    <body>
     <main class="contenedorPrincipal">
-    <h1 class="tituloPrincipal">TypeScript</h1>
+        <h1 class="tituloPrincipal">TypeScript</h1>
 
     <!-- Sección para el Ejercicio de Funciones -->
     <section id="seccionProductos" class="tarjetaEjercicio">
@@ -28,7 +28,7 @@
     </div>
 
     <div class="contenedorInput">
-      <h2 class="tituloSeccion">Ejercicio 2: Calculadora de Descuentos</h2>
+        <h2 class="tituloSeccion">Ejercicio 2: Calculadora de Descuentos</h2>
         <label for="precioProducto" class="etiqueta">Precio del Producto ($):</label>
         <input type="number" id="precioProducto" class="entradaTexto" placeholder="Ej: 1500">
         
@@ -74,8 +74,24 @@
     </div>
 </section>
 
+<!-- Sección Herencia -->
+<section id="seccionHerencia" class="tarjetaEjercicio">
+    <h2 class="tituloSeccion">Ejercicio 5: Herencia de Dispositivos</h2>
+    
+    <div class="contenedorInput">
+        <label for="nombreModelo" class="etiqueta">Modelo del Dispositivo:</label>
+        <input type="text" id="nombreModelo" class="entradaTexto" placeholder="Ej: Galaxy S24">
+        
+        <button id="botonCargar" class="botonAccion">Cargar Celular</button>
+    </div>
+
+    <div id="pantallaDispositivo" class="pantallaVisual">
+        Esperando dispositivo...
+    </div>
+</section>
+
 </main>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
-  </body>
+</body>
 </html>

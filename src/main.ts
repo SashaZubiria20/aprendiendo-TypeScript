@@ -3,4 +3,5 @@
 //import './funciones';
 //import './dom'
 //import './genericos';
-import './clases';
+//import './clases';
+import './herencia';
