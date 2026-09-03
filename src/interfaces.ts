@@ -32,6 +32,8 @@ const director1: Director<string> = {
 console.log(director1)
 
 
+
+
 /* Ejercicios */
 
 const tituloLibro = document.getElementById('tituloLibro') as HTMLInputElement;

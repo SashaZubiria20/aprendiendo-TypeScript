@@ -5,4 +5,5 @@
 //import './genericos';
 //import './clases';
 //import './herencia';
-import './interfaces';
+//import './interfaces';
+import './interfacesEnClases';

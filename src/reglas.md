@@ -97,3 +97,15 @@
 - **Uso**: Es el estándar profesional para definir estructuras de datos que vienen de bases de datos o APIs.
 - **Interfaces Genéricas**: Al igual que las funciones, pueden recibir un `<T>` para que una de sus propiedades sea flexible.
     Ej: `interface Caja<T> { contenido: T }`
+
+
+## Interfaces Aplicadas a Clases
+
+- **Palabra clave `implements`**: Se usa para obligar a una clase a cumplir con el contrato de una interfaz.
+- **Contrato Estricto**: La clase debe tener todas las propiedades y métodos definidos en la interfaz con el mismo nombre y tipo.
+- **Propiedades Adicionales**: Una clase puede implementar una interfaz y, además, tener sus propias propiedades y métodos extras que no están en el contrato.
+- **Múltiples Interfaces**: Una sola clase puede implementar varias interfaces al mismo tiempo separándolas por coma.
+    Ej: `class Perro implements IDomestico, IAnimal { ... }`
+- **Modificadores**: Cuando una clase implementa una interfaz, las propiedades del contrato deben ser obligatoriamente `public`.
+
+
