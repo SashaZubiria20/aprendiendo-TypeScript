@@ -101,3 +101,21 @@ body {
 .botonAccion:hover {
     background-color: #235a97;
 }
+
+
+/* Ejercicios Eventos */
+
+.listaPeliculas {
+    list-style-type: none;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+.tarjetaPelicula {
+    margin: 10px 0;
+    padding: 1rem;
+    border: 1px solid #334155;
+    background-color: #1e293b;
+    color: white;
+    border-radius: 8px;
+}

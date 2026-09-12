@@ -7,3 +7,4 @@
 //import './herencia';
 //import './interfaces';
 //import './interfacesEnClases';
+import './eventos';

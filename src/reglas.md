@@ -122,3 +122,15 @@
 - **Por qué evitarlo**: Hace que el código sea difícil de mantener y no aprovecha las ventajas de los empaquetadores modernos como Vite.
 
 
+## Eventos y DOM en TypeScript
+
+- **Selección de Elementos**: Siempre capturamos elementos con `document.getElementById` o `querySelector`.
+- **Aserción de Tipo (`as`)**: Obligatoria para decirle a TS qué tipo de elemento es (`HTMLInputElement`, `HTMLButtonElement`, etc.), permitiendo así acceder a propiedades como `.value` o `.textContent`.
+- **Validación de seguridad (`if`)**: Antes de manipular un elemento del DOM, siempre verificar si existe (`if (elemento)`) para evitar errores de tipo `null`.
+- **EventListeners**:
+    - Usar funciones flecha `() => { ... }` para mantener el contexto.
+    - El objeto `event` (evento) también debe tiparse cuando es necesario (ej: `e: MouseEvent`).
+- **Manipulación**: Usamos `.textContent` para texto seguro y `.innerHTML` solo si necesitamos inyectar etiquetas HTML (con cuidado de seguridad).
+
+
+
