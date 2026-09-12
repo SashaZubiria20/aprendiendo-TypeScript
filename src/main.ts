@@ -6,4 +6,4 @@
 //import './clases';
 //import './herencia';
 //import './interfaces';
-import './interfacesEnClases';
+//import './interfacesEnClases';

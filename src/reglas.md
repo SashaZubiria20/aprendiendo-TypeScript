@@ -109,3 +109,16 @@
 - **Modificadores**: Cuando una clase implementa una interfaz, las propiedades del contrato deben ser obligatoriamente `public`.
 
 
+## Módulos en TypeScript
+- **Concepto**: Es la capacidad de separar tu código en distintos archivos para que sea más legible y mantenible.
+- **`export`**: Se pone antes de una variable, función o clase para que pueda ser usada en otro archivo.
+- **`import`**: Se usa en otro archivo para traer lo que fue exportado.
+- **Vite y Módulos**: Vite utiliza un sistema moderno (ES Modules) que no requiere configuración manual en `tsconfig.json`. Solo con importar el archivo en `main.ts`, todo queda conectado.
+
+
+## Espacios de Nombres (Namespaces) - Concepto Legacy
+- **Concepto**: Una forma antigua de organizar código y evitar que los nombres de variables/interfaces choquen entre sí.
+- **Uso actual**: Desaconsejado en proyectos modernos. Se reemplazó completamente por el sistema de **Módulos (ES Modules)** que usa `import` y `export`.
+- **Por qué evitarlo**: Hace que el código sea difícil de mantener y no aprovecha las ventajas de los empaquetadores modernos como Vite.
+
+
