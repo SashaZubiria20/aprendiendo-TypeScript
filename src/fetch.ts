@@ -7,6 +7,7 @@ https://jsonplaceholder.typicode.com/
 
 Como es ts, lo ideal es castear el tiipo de dato, a alguno que conozcamos, lo podemos crear
 
+* Recordar que es mejor crear las interfaces en un archivo aparte
 */
 
 interface Usuario {
