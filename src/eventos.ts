@@ -37,8 +37,8 @@ const agregarPeli = (pelicula: Pelicula) => {
 
     h3.textContent = pelicula.titulo;
     h4.textContent = `Duración: ${pelicula.duracion} min`;
+    
     li.className = 'tarjetaPelicula';
-
     li.appendChild(h3);
     li.appendChild(h4);
 
@@ -47,11 +47,17 @@ const agregarPeli = (pelicula: Pelicula) => {
 
 
 botonMostrar.addEventListener('click', () => {
-    listaPeliculas.innerHTML = '';
+    const hayPeliculasEnPantalla = listaPeliculas.innerHTML !== '';
 
-    peliArr.forEach((peli) => {
-        agregarPeli(peli);
-    });
+    if (hayPeliculasEnPantalla) {
+        listaPeliculas.innerHTML = '';
+        botonMostrar.textContent = 'Agregar Películas';
+    } else {
+        peliArr.forEach((peli) => {
+            agregarPeli(peli);
+        });
+        botonMostrar.textContent = 'Quitar Películas';
+    }
 });
 
 

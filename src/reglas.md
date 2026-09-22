@@ -133,4 +133,12 @@
 - **Manipulación**: Usamos `.textContent` para texto seguro y `.innerHTML` solo si necesitamos inyectar etiquetas HTML (con cuidado de seguridad).
 
 
+## Fetch y Async/Await
+
+- **`async`**: Se marca una función como asíncrona cuando va a realizar operaciones que tardan tiempo (promesas).
+- **`await`**: Detiene la ejecución dentro de la función hasta que el servidor responde.
+- **Tipado de Respuestas (Crucial)**: Cuando hacemos un `fetch`, TypeScript por defecto no sabe qué trae la API. Lo correcto es crear una `interface` que describa la respuesta del servidor para que TS nos ayude con el autocompletado y detecte errores si la API cambia.
+    Ej: `interface Usuario { name: string; email: string; }`
+
+
 
